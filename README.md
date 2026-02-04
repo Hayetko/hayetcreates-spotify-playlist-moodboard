@@ -1,30 +1,13 @@
 # hayetcreates-spotify-playlist-moodboard
-A web app that turns Spotify playlists into a visual moodboard using the Spotify Web API (audio features + insights). (WIP)
-
-
 # Playlist Moodboard (Spotify Web API) — WIP
 
 ## About
-A lightweight web app that turns Spotify playlists into a visual “moodboard” (cover art, tracks, and optional audio-feature insights).
+I plan to build a lightweight web app that lets users explore Spotify playlists in a more visual way.  
+The main goal is to take a playlist and display it as a “moodboard” using cover art + track details, and then (optionally) add simple audio-feature insights.
 
-## Features (planned)
-- Paste a Spotify playlist link/ID
-- Show playlist cover + title
-- Display track list (first 10–50 tracks)
-- (Optional) Visualize audio features (energy, valence, danceability)
+I enjoy Spotify and I also enjoy experimenting with creative coding and UI, so this is a project where I can combine both.  
+I’m building the MVP first (clean UI + playlist fetch), then I’ll improve it step by step.
 
-## Tech stack
-- Vite
-- JavaScript / HTML / CSS
-- Spotify Web API
-- (Optional) Chart.js / Recharts
 
-## Status
-In progress — building MVP first (UI → playlist fetch → insights).
 
-## Roadmap
-- [ ] Build UI with mock playlist data
-- [ ] Add Spotify auth (PKCE)
-- [ ] Fetch playlist tracks
-- [ ] Add audio-features insights + simple chart
-- [ ] Deploy (Vercel/Netlify) + add live demo link
+
