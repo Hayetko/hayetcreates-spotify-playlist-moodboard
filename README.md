@@ -12,14 +12,13 @@ I’m building the MVP first (clean UI + playlist fetch), then I’ll improve it
 - Paste a Spotify playlist link/ID
 - Show playlist cover + title + basic info
 - Display tracklist (first 10–50 tracks)
-- (Optional) Audio feature insights (energy, valence, danceability)
-- (Optional) Simple charts / visual summaries
+- Audio feature insights (energy, valence, danceability)
+- Simple charts / visual summaries
 
 ## Tech stack (planned)
 - Vite
 - JavaScript / HTML / CSS
 - Spotify Web API
-- (Optional) Chart.js
 
 ## Status
 Work in progress — MVP first, then iteration.
