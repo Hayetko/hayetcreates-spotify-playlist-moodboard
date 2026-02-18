@@ -9,9 +9,9 @@ I enjoy Spotify and I also enjoy experimenting with creative coding and UI, so t
 I’m building the MVP first (clean UI + playlist fetch), then I’ll improve it step by step.
 
 ## Planned features
-- Paste a Spotify playlist link/ID
-- Show playlist cover + title + basic info
-- Display tracklist (first 10–50 tracks)
+- Pasting a Spotify playlist link/ID
+- Showing playlist cover + title + basic info
+- Displaying tracklist (first 10–50 tracks)
 - Audio feature insights (energy, valence, danceability)
 - Simple charts / visual summaries
 
