@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlist Moodboard</title>
+  </head>
+
+  <body>
+    <!-- The main container for the whole app -->
+    <div class="app">
+      <header class="top">
+        <div>
+          <!-- App title + short explanation -->
+          <h1>Playlist Moodboard</h1>
+          <p class="sub">
+            Paste a Spotify playlist link/ID to generate a visual moodboard + insights.
+          </p>
+        </div>
+
+        <!-- Login and loggout buttons -->
+        <div class="auth">
+          <button id="loginBtn">Log in with Spotify</button>
+          <button id="logoutBtn" class="secondary" hidden>Log out</button>
+        </div>
+      </header>
+
+      <!-- The controls section: input + button + toggle -->
+      <section class="controls">
+        <!-- The user input playlist link  -->
+        <input
+          id="playlistInput"
+          placeholder="Paste playlist link or ID (e.g. https://open.spotify.com/playlist/...)"
+        />
+
+        <!-- The Button that starts fetching playlist -->
+        <button id="loadBtn">Create moodboard</button>
+
+        <!-- Toggle for audio feature insights -->
+        <label class="toggle">
+          <input type="checkbox" id="insightsToggle" checked />
+          <span>Show audio feature insights</span>
+        </label>
+      </section>
+
+      <!-- Status messages like “Fetching…”, errors, etc. -->
+      <section id="status" class="status" hidden></section>
+
+      <!-- Playlist header (inlcudes cover image + title + owner + number of tracks) -->
+      <section id="playlistHeader" class="playlistHeader" hidden></section>
+
+      <!-- Audio feature insights (energy, valence, danceability averages) -->
+      <section id="insights" class="insights" hidden></section>
+
+      <!-- The moodboard grid of track tiles -->
+      <main id="grid" class="grid" hidden></main>
+    </div>
+
+    <!-- Linking the JavaScript entry file -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
