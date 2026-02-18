@@ -21,11 +21,11 @@ I’m building the MVP first (clean UI + playlist fetch), then I’ll improve it
 - Spotify Web API
 
 ## Status
-Work in progress — MVP first, then iteration.
+Work in progress 
 
 ## Roadmap
-- [ ] Set up project structure + basic UI
-- [ ] Add Spotify authentication (PKCE)
-- [ ] Fetch playlist data + render tracklist
-- [ ] Add audio-features insights
-- [ ] Deploy and add live demo link
+- [ ] Setting up project structure + basic UI
+- [ ] Adding Spotify authentication (PKCE)
+- [ ] Fetching the playlists data + render tracklist
+- [ ] Adding audio features insights
+- [ ] Deploying and add live demo link
