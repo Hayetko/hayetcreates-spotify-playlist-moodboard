@@ -21,7 +21,9 @@ I’m building the MVP first (clean UI + playlist fetch), then I’ll improve it
 - Spotify Web API
 
 ## Status
-Work in progress 
+- Sometimes Spotify blocks access (403) in development mode, even if login works. This happens depending on playlist permissions / app access.
+- I added a Preview Mode so the moodboard UI still shows the concept and doesn’t stay empty if Spotify access is restricted.
+
 
 ## Roadmap
 - [ ] Setting up project structure + basic UI
