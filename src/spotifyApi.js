@@ -22,15 +22,15 @@ export function extractPlaylistId(input) {
   const trimmed = (input || "").trim();
   if (!trimmed) return null;
 
-  // Case 1: spotify:playlist:ID
+  // Case One: spotify:playlist:ID
   const uriMatch = trimmed.match(/spotify:playlist:([a-zA-Z0-9]+)/);
   if (uriMatch) return uriMatch[1];
 
-  // Case 2: any URL that contains, playlist/ID 
+  // Case Two: any URL that contains, playlist/ID 
   const urlMatch = trimmed.match(/\/playlist\/([a-zA-Z0-9]+)/);
   if (urlMatch) return urlMatch[1];
 
-  // Case 3: the user pasted only the playlist ID
+  // Case Three: the user pasted only the playlist ID
   if (/^[a-zA-Z0-9]{10,}$/.test(trimmed)) return trimmed;
 
   // If nothing matched, then the input isn't a valid playlist link/ID
