@@ -1,0 +1,78 @@
+— Documentation
+
+## Project idea:
+The idea started from a simple thought: I don’t want to build “just another playlist viewer” that looks like a plain list. Spotify playlists already have a strong visual identity ( such as cover art, album covers, track names), so I wanted to treat a playlist like a *moodboard*.  
+
+I’m really into Spotify and I also enjoy experimenting with creative coding and UI/UX, so this felt like a good portfolio project where I can combine:
+- a real-world API (Spotify Web API)
+- a clean, visual interface
+- and an idea that feels personal and “me”
+
+At first, my goal was an MVP: 1. paste a playlist link/ID  show the playlist cover, 2. details, 3. show the tracks in a grid. After that, I planned to add audio feature insights (energy, valence, danceability) and charts.
+
+## What I built 
+I built a lightweight web app using Vite and vanilla JavaScript. The user flow is:
+1. Log in with Spotify (Auth PKCE flow)
+2. Paste a Spotify playlist link or playlist ID
+3. Click “Create moodboard”
+4. The app fetches playlist data and renders a moodboard grid of tracks
+
+The moodboard layout is the main design choice of the project: instead of focusing on “data tables”, it focuses on the visual atmosphere of the playlist.
+
+## How I built it:
+### 1) Project setup (Vite)
+I used Vite because it’s fast and simple for vanilla JS projects. It gave me a clean structure to separate my code into:
+- UI logic (`main.js`)
+- Spotify authentication (`spotifyAuth.js`)
+- Spotify API helper functions (`spotifyApi.js`)
+- styling (`style.css`)
+
+### 2) Spotify login (PKCE)
+Because this is a frontend project, I used the PKCE OAuth flow.
+My login process:
+- generate a PKCE code verifier and challenge
+- redirect the user to Spotify’s authorization page
+- handle the callback with a “code”
+- exchange that code for an access token
+- store the access token and expiry in localStorage
+
+This was one of the biggest learning points, because it made the project feel like a real product (not just fake data).
+
+### 3) Fetching playlist data
+Once logged in, I fetch:
+- playlist metadata (title, cover, owner)
+- playlist tracks (the first 50 tracks)
+Then I render:
+- a header section (playlist cover and title)
+- a grid “moodboard” of track cards (album art + track title and artist)
+
+### 4) Dealing with API restrictions (403):
+While building, I ran into Spotify returning **403 Forbidden** for some playlist requests. This made me realise that even if your code runs, APIs have rules and restrictions ( such as playlist permissions, app access limits, etc.).
+
+Instead of leaving the app blank, I implemented a Preview Mode fallback:
+- If Spotify blocks the access, the UI still shows a sample moodboard so the concept is still visible and reviewable.
+- This makes the project feel more complete and user friendly, even when the API doesn’t cooperate.
+
+I implemented the fallback because this part mattered to me: in real software, you don’t just leave the user with a blank screen thinking “nothing is happening.” If something fails (e.g. an API restriction), the app should still guide the user and show *something* meaningful instead of looking broken.
+
+## How it ended (current status)
+The project ended as a working MVP with:
+- Spotify login (PKCE)
+- playlist link/ID input
+- playlist header rendering
+- track moodboard grid
+- Preview Mode fallback for restricted access
+
+
+
+## What I learned: 
+- How OAuth PKCE works in a frontend app (verifier, challenge, token exchange)
+- How to structure a small project cleanly (auth vs API calls vs UI rendering)
+- How to design a UI around an idea (moodboard concept) instead of just listing data
+- Why error handling matters (403 issues happen, and you need a graceful response)
+
+## Next steps (if I continue)
+- Add pagination (“load more” tracks)
+- Add insights that don’t rely on restricted endpoints ( for example, track popularity averages, artist frequency)
+- Improve UI states (loading skeletons, empty states)
+- Deploy the project (Netlify/Vercel) + update Spotify redirect URI for a live demo link
