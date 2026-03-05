@@ -10,10 +10,10 @@
 - Authorization Code with PKCE Flow (Spotify tutorial)  
   https://developer.spotify.com/documentation/web-api/tutorials/code-pkce-flow
 
-- Get Playlist (endpoint reference)  
+- Getting Playlist (endpoint reference)  
   https://developer.spotify.com/documentation/web-api/reference/get-playlist
 
-- Get Playlist Items / Tracks (endpoint reference)  
+- Getting Playlist Items / Tracks (endpoint reference)  
   https://developer.spotify.com/documentation/web-api/reference/get-playlists-tracks
 
 
@@ -25,7 +25,6 @@
   https://datatracker.ietf.org/doc/html/rfc6749
 
 
-## JavaScript / Web Platform (MDN)
 - MDN: Fetch API (making HTTP requests)  
   https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 
@@ -39,10 +38,10 @@
 - MDN: Web Crypto API (crypto.subtle + SHA-256 hashing for PKCE challenge)  
   https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API
 
-- MDN: Window.localStorage (storing token + expiry in browser storage)  
+- MDN: Window.localStorage (storing token and expiry in browser storage)  
   https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 
 
-## Tooling (project setup)
-- Vite Documentation (Vanilla JS project setup + dev server)  
+## Project setup
+- Vite Documentation (Vanilla JS project setup and dev server)  
   https://vitejs.dev/guide/
