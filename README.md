@@ -2,7 +2,7 @@
 ## Playlist Moodboard (Spotify Web API) — WIP
 
 ## About
-Hi! I’m Hayet. I’m building a lightweight web app that lets users explore Spotify playlists in a more visual way.
+Hi! I’m Hayet and building a lightweight web app that lets users explore Spotify playlists in a more visual way.
 
 I love Spotify because I use playlists to match my mood and routine (gym, commuting, studying), and I’ve always felt playlists have a strong “visual vibe” through cover art and album imagery. So the idea is simple: paste a playlist link/ID and generate a “moodboard” using the playlist cover + track details. I’m building the MVP first (clean UI + playlist fetch), then improving it step by step with optional insights and visual summaries.
 ## Planned features
