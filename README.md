@@ -26,8 +26,8 @@ I’m building the MVP first (clean UI + playlist fetch), then I’ll improve it
 
 
 ## Roadmap
-- [ ] Setting up project structure + basic UI
-- [ ] Adding Spotify authentication (PKCE)
-- [ ] Fetching the playlists data + render tracklist
-- [ ] Adding audio features insights
-- [ ] Deploying and add live demo link
+1.Setting up project structure + basic UI
+2. Adding Spotify authentication (PKCE)
+3. Fetching the playlists data + render tracklist
+4. Adding audio features insights
+5. Deploying and add live demo link
