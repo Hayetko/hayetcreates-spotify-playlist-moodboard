@@ -1,0 +1,48 @@
+# References for the Playlist Moodboard — Spotify Web API
+
+## Spotify Developer Documentation
+- Spotify for Developers Dashboard (create/manage apps, client ID, redirect URIs)  
+  https://developer.spotify.com/dashboard
+
+- Spotify Web API Documentation (overview)  
+  https://developer.spotify.com/documentation/web-api
+
+- Authorization Code with PKCE Flow (Spotify tutorial)  
+  https://developer.spotify.com/documentation/web-api/tutorials/code-pkce-flow
+
+- Get Playlist (endpoint reference)  
+  https://developer.spotify.com/documentation/web-api/reference/get-playlist
+
+- Get Playlist Items / Tracks (endpoint reference)  
+  https://developer.spotify.com/documentation/web-api/reference/get-playlists-tracks
+
+
+## OAuth / PKCE (standards)
+- RFC 7636 — Proof Key for Code Exchange (PKCE)  
+  https://datatracker.ietf.org/doc/html/rfc7636
+
+- RFC 6749 — OAuth 2.0 Authorization Framework  
+  https://datatracker.ietf.org/doc/html/rfc6749
+
+
+## JavaScript / Web Platform (MDN)
+- MDN: Fetch API (making HTTP requests)  
+  https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+
+- MDN: fetch()  
+  https://developer.mozilla.org/en-US/docs/Web/API/fetch
+
+- MDN: URL + URLSearchParams (building query params like `?ids=...`)  
+  https://developer.mozilla.org/en-US/docs/Web/API/URL  
+  https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
+
+- MDN: Web Crypto API (crypto.subtle + SHA-256 hashing for PKCE challenge)  
+  https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API
+
+- MDN: Window.localStorage (storing token + expiry in browser storage)  
+  https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
+
+## Tooling (project setup)
+- Vite Documentation (Vanilla JS project setup + dev server)  
+  https://vitejs.dev/guide/
